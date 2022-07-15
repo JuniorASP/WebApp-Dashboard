@@ -8,7 +8,7 @@
     <title>Web app dashboard</title>
 </head>
 <body class="grid-container">
-    <header>
+    <header class="header">
         <h1>Webapp&trade;</h1>
         <div class="container">
 <p>Student name</p>
@@ -20,6 +20,7 @@
 
 <section class="traffic">
     <div class="traffic-header">
+        
 <h3>Traffic</h3>
 <ul class="traffic-nav">
     <li class="traffic-nav-link">Hourly</li>
@@ -31,7 +32,8 @@
     <div class="widget-container-full">
     <!-- element line graph will attach to -->
     <canvas id="traffic-chart"></canvas>
-    </div>
+    
+</div>
     </section>
 
     <!-- bar graph -->
@@ -48,13 +50,14 @@
 
 </div>
     </header>
+    <main>
     <div class="main-header"> // row
         <h2 class="headline">Dashboard</h2>
         <div class="tab"></div>
         </div>
         <!-- alert banner -->
 <div class="alert" id="alert" >
-    <!-- JS will insert alert here -->
+    <script type="text/javascript" src="app.js"></script>
     </div>
     <div class="social-container">
         <div class="social-image"
@@ -85,6 +88,7 @@
     
     <section class="members">
         <h3>New Members</h3>
+        <nav class="navigation">
         <div class="members-container">
             <img src="/web_app_dashboard_v3.2/images/member-1.jpg" alt="student picture">
         
@@ -124,8 +128,11 @@
         </div>
         <p>10/15/15</p>
         </div>
+        </nav>
 
         <!-- messaging widget -->
+        <main class="main">
+        
 <section class="message">
     <h3>Message User</h3>
     <form class="widget-container">
@@ -140,7 +147,7 @@
     <button class="button-primary" id="send" >Send</button>
     </form>
     </section>
-
+        </nav>
    <!-- local settings widget -->
 <section class="settings">
     <h3>Settings</h3>
@@ -172,6 +179,6 @@
     </div>
     </section>
     
-    
+</main>
 </body>
 </html>
