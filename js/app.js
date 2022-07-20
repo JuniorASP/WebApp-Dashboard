@@ -17,14 +17,14 @@ bell.addEventListener('click', () => {
 });
 
 const removeNotif = document.querySelectorAll('.remove-notif');
-const numberOfNotifs = removeNotif.length;
+let numberOfNotifs = removeNotif.length;
 const indicator = document.getElementById('indicator');
 
 for (let i=0; i<removeNotif.length; i++) {
   removeNotif[i].addEventListener('click', (e) => {
     let notif = e.target;
     notif.parentNode.style.display = 'none';
-    numberOfNotifs --;
+    numberOfNotifs--;
     if (numberOfNotifs == 0) {
       indicator.style.display= 'none';
       alertBox.style.display = 'none';
@@ -99,13 +99,13 @@ let trafficChart = new Chart(traffic, {
             strokeColor: '#22c1c3',
             data: dataHourly,
             backgroundColor: [
-              'rgba(34, 193, 195, 0.2)'
+              'rgba(116, 119, 191, .3)'
             ],
             borderColor: [
               'rgba(20, 115, 117, 0.8)'
             ],
             borderWidth: 1,
-            cubicInterpolationMode: 'monotone',
+            cubicInterpolationMode: 'line',
         }]
     },
     options: {
@@ -139,7 +139,7 @@ let dailyChart = new Chart(daily, {
             label: 'Daily Traffic',
             data: [75, 110, 175, 125, 225, 200, 100],
             backgroundColor: [
-              'rgba(34, 193, 195, 0.2)'
+              'rgba(116, 119, 191, .3)'
             ],
             borderColor: [
               'rgba(20, 115, 117, 0.8)'
@@ -182,9 +182,9 @@ let config = new Chart(mobile, {
       label: 'Mobile Users',
       data: [270, 65, 65],
       backgroundColor: [
-        'rgba(34, 193, 195, 0.6 )',
-        'rgba(255, 123, 0, 0.6)',
-        'rgba(153, 102, 255, 0.6)'
+        '#7477BF',
+        '#78CF82',
+        '#51B6C8'
       ],
       borderColor: [
         'rgba(20, 115, 117, 0.8)'

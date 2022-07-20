@@ -45,7 +45,7 @@
   body {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom left, #0f0120, #07f0aa) center/cover no-repeat;
+    background: linear-gradient(to bottom left, #0f0120, #6407ce) center/cover no-repeat;
   }
   
   header {
@@ -100,6 +100,7 @@
     .main-grid-container section:nth-child(n+5) {
       grid-column: span 1;
     }
+    
   }
   /*///////////////////////////////
   ///           Blocks          ///
@@ -107,8 +108,7 @@
   .block {
     margin: 10px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 15px;
+    
   }
   
   h3 {
@@ -266,6 +266,9 @@
   ///////////////////////////////*/
   .cloud-container {
     margin-right: auto;
+    background-color: #cc6200;
+    border-radius: 10px;
+    color: white;
   }
   
   text {
@@ -289,7 +292,7 @@
     align-items: center;
     margin: 10px;
     padding: 10px 20px;
-    background-color: #ffa600;
+    background-color: #217ea3;
     border-radius: 15px;
   }
   .alert p, .alert span {
@@ -332,7 +335,7 @@
   .traffic-time-container input {
     font-size: 0.7em;
     padding: 0.55em;
-    background-color: #1a9598;
+    background-color: rgba(70, 8, 95, 0.8);;
     color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
   }
@@ -502,8 +505,8 @@
   
   .send-btn, #save-btn, #cancel-btn, #reset-btn {
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #1a9598;
+    color: rgba(242, 235, 245, 0.8);
+    background-color: rgba(70, 8, 95, 0.8);
     width: 100%;
     padding: 0.5em;
     border-radius: 10px;
@@ -546,7 +549,7 @@
   .msg-alert {
     margin: 10px 0;
     padding: 0.5em;
-    background-color: #ffa600;
+    background-color: #cc6200;
     border-radius: 15px;
   }
   .msg-alert p, .msg-alert span {
@@ -585,7 +588,7 @@
     width: 70px;
     color: rgba(255, 255, 255, 0.8);
     padding: 0.4em;
-    background-color: #1a9598;
+    background-color: rgba(70, 8, 95, 0.8);;
   }
   .switch input:first-child {
     border-radius: 10px 0 0 10px;
